@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -90,7 +91,7 @@ const questions: Question[] = [
 const profiles: Profile[] = [
   {
     type: "iniciante",
-    title: "Doce Começar ✨",
+    title: "Doce Começar 🌟",
     description: "Você tem todo o potencial para se tornar uma mestra dos brigadeiros! Sua energia e vontade de aprender são seus maiores trunfos.",
     solution: "O Super Brigadeiro + 150 Receitas foi criado especialmente para pessoas como você. Com passo a passo detalhado, dicas de ouro e receitas que vão do básico ao avançado, você vai sair do zero e chegar ao nível expert em poucos dias!",
     cta: "Quero Começar Minha Jornada Doce Agora!",
@@ -99,7 +100,7 @@ const profiles: Profile[] = [
   },
   {
     type: "vendedora",
-    title: "Empreendedora Doce 🚀",
+    title: "Empreendedora Doce 💰",
     description: "Você tem visão de negócio e quer transformar sua paixão em renda! Seu foco em resultados é admirável.",
     solution: "O Super Brigadeiro + 150 Receitas é seu passaporte para o sucesso! Além das receitas irresistíveis, você receberá estratégias de precificação, dicas de vendas e segredos para fidelizar clientes. Sua futura clientela já está esperando!",
     cta: "Quero Começar Meu Negócio dos Sonhos!",
@@ -108,7 +109,7 @@ const profiles: Profile[] = [
   },
   {
     type: "perfeccionista",
-    title: "Mestra dos Doces ⭐",
+    title: "Mestra dos Doces 👑",
     description: "Você busca a excelência e quer dominar cada técnica! Sua dedicação ao aperfeiçoamento é inspiradora.",
     solution: "O Super Brigadeiro + 150 Receitas vai elevar seu nível para o próximo patamar! Com receitas exclusivas, técnicas avançadas e segredos profissionais, você vai criar brigadeiros dignos de confeitaria gourmet e ser reconhecida como referência!",
     cta: "Quero Me Tornar Uma Verdadeira Mestra!",
@@ -262,7 +263,7 @@ const Index = () => {
           {currentQuestion === 0 ? (
             <>
               <CardTitle className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent mb-4">
-                Descubra Seu Perfil Doce! 🎯
+                Descubra Seu Perfil Doce! 🍫
               </CardTitle>
               <p className="text-gray-600 text-lg mb-6">
                 Responda 6 perguntinhas rápidas e descubra qual é o seu caminho ideal para dominar o mundo dos brigadeiros gourmet!

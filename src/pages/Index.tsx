@@ -262,11 +262,8 @@ const Index = () => {
           </div>
           {currentQuestion === 0 ? (
             <>
-              <CardTitle className="text-3xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent">
-                  Descubra Seu Perfil Doce!
-                </span>{" "}
-                <span>🍫</span>
+              <CardTitle className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent mb-4">
+                Descubra Seu Perfil Doce! 🍫
               </CardTitle>
               <p className="text-gray-600 text-lg mb-6">
                 Responda 6 perguntinhas rápidas e descubra qual é o seu caminho ideal para dominar o mundo dos brigadeiros gourmet!

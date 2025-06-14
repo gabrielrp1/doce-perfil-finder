@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -37,7 +38,7 @@ const questions: Question[] = [
   },
   {
     id: 2,
-    question: "O que mais te motiva com os brigadeiros?",
+    question: "O que mais te motiva com os doces?",
     options: [
       { text: "Quero impressionar família e amigos", value: "impress", points: { iniciante: 3, vendedora: 1, perfeccionista: 2 } },
       { text: "Busco uma renda extra ou negócio", value: "business", points: { iniciante: 1, vendedora: 3, perfeccionista: 1 } },
@@ -60,7 +61,7 @@ const questions: Question[] = [
     question: "Qual sua maior dificuldade atual?",
     options: [
       { text: "Não sei nem por onde começar", value: "start", points: { iniciante: 3, vendedora: 1, perfeccionista: 0 } },
-      { text: "Meus brigadeiros ficam sem graça", value: "boring", points: { iniciante: 2, vendedora: 1, perfeccionista: 2 } },
+      { text: "Meus doces ficam sem graça", value: "boring", points: { iniciante: 2, vendedora: 1, perfeccionista: 2 } },
       { text: "Não sei como vender ou precificar", value: "selling", points: { iniciante: 1, vendedora: 3, perfeccionista: 1 } },
       { text: "Quero receitas mais sofisticadas", value: "advanced", points: { iniciante: 0, vendedora: 2, perfeccionista: 3 } }
     ]
@@ -69,7 +70,7 @@ const questions: Question[] = [
     id: 5,
     question: "Como você se vê daqui a 6 meses?",
     options: [
-      { text: "Fazendo brigadeiros deliciosos em casa", value: "home", points: { iniciante: 3, vendedora: 1, perfeccionista: 2 } },
+      { text: "Fazendo doces deliciosos em casa", value: "home", points: { iniciante: 3, vendedora: 1, perfeccionista: 2 } },
       { text: "Com uma renda mensal consistente", value: "income", points: { iniciante: 1, vendedora: 3, perfeccionista: 1 } },
       { text: "Sendo reconhecida como especialista", value: "expert", points: { iniciante: 0, vendedora: 2, perfeccionista: 3 } },
       { text: "Ensinando outros a fazer", value: "teaching", points: { iniciante: 1, vendedora: 1, perfeccionista: 3 } }
@@ -77,7 +78,7 @@ const questions: Question[] = [
   },
   {
     id: 6,
-    question: "O que mais te emociona na ideia de dominar os brigadeiros?",
+    question: "O que mais te emociona na ideia de dominar os doces?",
     options: [
       { text: "Ver o sorriso das pessoas ao provarem", value: "joy", points: { iniciante: 3, vendedora: 2, perfeccionista: 2 } },
       { text: "A independência financeira", value: "freedom", points: { iniciante: 1, vendedora: 3, perfeccionista: 1 } },
@@ -91,8 +92,8 @@ const profiles: Profile[] = [
   {
     type: "iniciante",
     title: "Doce Começar",
-    description: "Você tem todo o potencial para se tornar uma mestra dos brigadeiros! Sua energia e vontade de aprender são seus maiores trunfos.",
-    solution: "O Super Brigadeiro + 150 Receitas foi criado especialmente para pessoas como você. Com passo a passo detalhado, dicas de ouro e receitas que vão do básico ao avançado, você vai sair do zero e chegar ao nível expert em poucos dias!",
+    description: "Você tem todo o potencial para se tornar uma mestra dos doces! Sua energia e vontade de aprender são seus maiores trunfos.",
+    solution: "O Super Doce + 150 Receitas foi criado especialmente para pessoas como você. Com passo a passo detalhado, dicas de ouro e receitas que vão do básico ao avançado, você vai sair do zero e chegar ao nível expert em poucos dias!",
     cta: "Quero Começar Minha Jornada Doce Agora!",
     icon: Heart,
     color: "bg-pink-500"
@@ -101,7 +102,7 @@ const profiles: Profile[] = [
     type: "vendedora",
     title: "Empreendedora Doce",
     description: "Você tem visão de negócio e quer transformar sua paixão em renda! Seu foco em resultados é admirável.",
-    solution: "O Super Brigadeiro + 150 Receitas é seu passaporte para o sucesso! Além das receitas irresistíveis, você receberá estratégias de precificação, dicas de vendas e segredos para fidelizar clientes. Sua futura clientela já está esperando!",
+    solution: "O Super Doce + 150 Receitas é seu passaporte para o sucesso! Além das receitas irresistíveis, você receberá estratégias de precificação, dicas de vendas e segredos para fidelizar clientes. Sua futura clientela já está esperando!",
     cta: "Quero Começar Meu Negócio dos Sonhos!",
     icon: TrendingUp,
     color: "bg-green-500"
@@ -110,7 +111,7 @@ const profiles: Profile[] = [
     type: "perfeccionista",
     title: "Mestra dos Doces",
     description: "Você busca a excelência e quer dominar cada técnica! Sua dedicação ao aperfeiçoamento é inspiradora.",
-    solution: "O Super Brigadeiro + 150 Receitas vai elevar seu nível para o próximo patamar! Com receitas exclusivas, técnicas avançadas e segredos profissionais, você vai criar brigadeiros dignos de confeitaria gourmet e ser reconhecida como referência!",
+    solution: "O Super Doce + 150 Receitas vai elevar seu nível para o próximo patamar! Com receitas exclusivas, técnicas avançadas e segredos profissionais, você vai criar doces dignos de confeitaria gourmet e ser reconhecida como referência!",
     cta: "Quero Me Tornar Uma Verdadeira Mestra!",
     icon: Sparkles,
     color: "bg-purple-500"
@@ -268,7 +269,7 @@ const Index = () => {
                 <span>🍫</span>
               </CardTitle>
               <p className="text-gray-600 text-lg mb-6">
-                Responda 6 perguntinhas rápidas e descubra qual é o seu caminho ideal para dominar o mundo dos brigadeiros gourmet!
+                Responda 6 perguntinhas rápidas e descubra qual é o seu caminho ideal para dominar o mundo dos doces gourmet!
               </p>
             </>
           ) : (

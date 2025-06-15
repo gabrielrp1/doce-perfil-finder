@@ -209,7 +209,7 @@ const Index = () => {
               </div>
             </div>
             <CardTitle className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent">
-              Seu Perfil: {result.title} {result.type === "iniciante" ? "🌟" : result.type === "vendedora" ? "💰" : "👑"}
+              Seu Perfil: {result.title} <span>{result.type === "iniciante" ? "🌟" : result.type === "vendedora" ? "💰" : "👑"}</span>
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
@@ -229,6 +229,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="w-full bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white font-bold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                onClick={() => window.open('https://app.nivopayoficial.com.br/checkout/c917718d-07e2-4756-b57d-6eadb928d6ba', '_blank')}
               >
                 {result.cta}
               </Button>
@@ -242,7 +243,7 @@ const Index = () => {
             </div>
             <div className="text-center">
               <p className="text-sm text-gray-500">
-                ✨ Mais de 10.000 pessoas já transformaram suas vidas com nossos brigadeiros!
+                <span>✨</span> Mais de 10.000 pessoas já transformaram suas vidas com nossos doces!
               </p>
             </div>
           </CardContent>

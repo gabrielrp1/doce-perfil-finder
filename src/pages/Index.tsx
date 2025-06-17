@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -174,6 +173,14 @@ const Index = () => {
     setScores({ iniciante: 0, vendedora: 0, perfeccionista: 0 });
   };
 
+  const handleCheckoutClick = () => {
+    // Track Facebook Pixel event
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'InitiateCheckout');
+    }
+    window.open('https://app.nivopayoficial.com.br/checkout/c917718d-07e2-4756-b57d-6eadb928d6ba', '_blank');
+  };
+
   if (showMotivation) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-orange-50 to-yellow-100 flex items-center justify-center p-4">
@@ -229,7 +236,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="w-full bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white font-bold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                onClick={() => window.open('https://app.nivopayoficial.com.br/checkout/c917718d-07e2-4756-b57d-6eadb928d6ba', '_blank')}
+                onClick={handleCheckoutClick}
               >
                 {result.cta}
               </Button>
